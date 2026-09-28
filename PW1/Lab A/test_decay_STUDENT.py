@@ -21,20 +21,16 @@ def test_starts_at_N0():
 #   Check that calling simulate(...) with a negative lam raises a ValueError.
 #   Which pytest tool checks that an error is raised?
 
+def test_rejects_negative_rate():
+    """Check that calling simulate(...) with a negative lam raises a ValueError."""
+    with pytest.raises(ValueError):
+        simulate(N0=100, lam=-0.1)
+
 
 # TODO 2: test_matches_law
 #   Check that the simulation's AVERAGE over many seeds is close to the
 #   physical law  N0 * exp(-lam * t).
 #   Which pytest tool compares floating-point values with a tolerance?
-
-import pytest
-import numpy as np
-from decay import simulate
-
-def test_rejects_negative_rate():
-    """Check that calling simulate(...) with a negative lam raises a ValueError."""
-    with pytest.raises(ValueError):
-        simulate(N0=100, lam=-0.1)
 
 def test_matches_law():
     """Check that the simulation's AVERAGE over many seeds is close to the physical law N0 * exp(-lam * t)."""
