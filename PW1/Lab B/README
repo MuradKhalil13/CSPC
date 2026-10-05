@@ -1,0 +1,8 @@
+#Lab B:Data, PLotting, Automotion
+
+#Result and analysis
+Observed Data: The "decay_observed.csv" dataset illustrates a clear exponential decay trend over time.
+
+Comparison: The observed data points closely follow the analytical curve   N0 * exp(-LAMBDA * t)  with lambda = 0.3, confirming that the observed phenomenon matches the physical law accurately.
+
+Automation Pipeline: A Snakemake pipeline was implemented via "Snakefile" to automatically regenerate "figure.png" from "decay_observed.csv" and "plot_STUDENT.py" whenever source files are modified.
