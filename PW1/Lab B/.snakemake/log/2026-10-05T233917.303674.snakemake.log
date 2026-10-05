@@ -1,0 +1,43 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-10-05 23:39:17
+  Workflow ID: 0791fd66-9c84-463b-a7a7-0c48a1d343f8
+  Platform: Linux-7.0.0-30-generic-x86_64-with-glibc2.43
+  Host: murad-HP-250R-15-6-inch-G9-Notebook-PC
+  User: murad
+  Snakemake version: 9.27.0
+  Python version: 3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]
+  Command: /home/murad/miniconda3/envs/cspc/bin/snakemake --cores 1 figure.png
+  Snakefile: /home/murad/CSPC/PW1/Lab B/snakefile
+  Base directory: /home/murad/CSPC/PW1/Lab B
+  Run directory: /home/murad/CSPC/PW1/Lab B
+  Working directory: /home/murad/CSPC/PW1/Lab B
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+plot         1
+total        1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Mon Oct  5 23:39:17 2026]
+localrule plot:
+    input: decay_observed.csv
+    output: figure.png
+    jobid: 0
+    reason: Missing output files: figure.png
+    resources: tmpdir=/tmp
+[Mon Oct  5 23:39:25 2026]
+Finished jobid: 0 (Rule: plot)
+1 of 1 steps (100%) done
+Complete log(s): /home/murad/CSPC/PW1/Lab B/.snakemake/log/2026-10-05T233917.303674.snakemake.log
+Elapsed time: 0:00:08.561746
