@@ -1,0 +1,5 @@
+#Accelaration is so noisy, becaause when we derivative any value, we divide the difference between 2 points to equal time slice, and derive twice is increase the error, imagine that when you derive twice, you divide first value to 0.1*0.1, it means that you reduce value 100 times
+
+#When we integrating noisy accelaration back up to velocity and position, we obsereved that recovered posiiton matches closely with origin position, it means that integration can sum approxiomately with small error
+
+#mean acceleration:-8.58    acceleration std=28.72      largest difference in position:0.6398
