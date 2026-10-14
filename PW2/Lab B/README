@@ -1,0 +1,13 @@
+#Practical work 2, Lab B
+
+#Overview
+We compare three optimization methods:
+1.Gradient Descent:Iterative downhill steps using the first derivative (controlled by learning rate `lr`).
+2.Newton's Method:Rapid root-finding using first and second derivatives, combined with curvature checks (`d2f` / `d2g`) to classify stationary points.
+3. **SLSQP:** A robust optimization method from `scipy.optimize.minimize`.
+
+#Functions analyzed
+-Part 2A ($f(x) = (x-3)^2 + 1$):A simple convex function where all three methods successfully converge to the global minimum at $x\approx 3$.
+-Part 2B ($g(x) = x^4 - 3x^2 + x + 5$):** A more complex, non-convex landscape demonstrating how:
+  -Starting points ($x_0 = 0$ vs $x_0 = 2$) lead to different convergence results.
+  -Newton's method can land on local maxima or minima depending on the initial guess and second-derivative signs ($g''(x) > 0$ for minimum, $g''(x) < 0$ for maximum).
