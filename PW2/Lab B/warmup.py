@@ -36,8 +36,8 @@ x_newton=newton(df, x0=0.0, fprime=d2f)
 print(f"Newton method result is: x={x_newton:4f}")
 
 #   (3) scipy.optimize.minimize(f, x0, method="SLSQP")
-x_SLSQP=minimize(f, x0=0.0, method="SLSQP")
-print(f"SLSQP result: x={x_SLSQP.x[0]:.4f}")
+result_min=minimize(f, x0=0.0, method="SLSQP")
+print(f"SLSQP result: x={result_min.x[0]:.4f}")
 
 x
 
